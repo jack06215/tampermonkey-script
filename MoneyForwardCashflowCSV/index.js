@@ -1,12 +1,3 @@
-// ==UserScript==
-// @name         MoneyForward ME Cashflow
-// @version      1.0
-// @description  MFME Cashflow
-// @author       sepicles
-// @match        https://moneyforward.com/cf
-// @grant        none
-// ==/UserScript==
-
 //2次元配列をCSV出力する
 function exportCSV(records, filename) {
   let data = records.map((record) => record.join(",")).join("\r\n");
@@ -118,9 +109,3 @@ function main() {
     }
   });
 }
-
-(function () {
-  "use strict";
-  main();
-  // Your code here...
-})();
