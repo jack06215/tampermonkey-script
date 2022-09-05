@@ -26,8 +26,8 @@ function main() {
             var get_date = document.getElementsByClassName(
                 "fc-header-title in-out-header-title"
             ) as HTMLCollectionOf<HTMLElement>; //年取得用クラス名
-            var year = get_date[0].innerText.substr(0, 4); //年
-            var month = get_date[0].innerText.substr(5, 2); //月
+            var year = get_date[0].innerText.substring(0, 4); //年
+            var month = get_date[0].innerText.substring(5, 7); //月
 
             //家計簿データを取得する
             var tableelement = document.getElementById(table_id) as HTMLTableElement;
